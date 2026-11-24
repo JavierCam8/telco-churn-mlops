@@ -34,4 +34,20 @@ Recall (Exhaustividad): Porcentaje de casos reales de abandono que el modelo log
 =======
 ## Modelo SVM
 Support Vector Machine (SVM) es un algoritmo de aprendizaje supervisado que busca el hiperplano óptimo para separar las clases de datos. En este proyecto se utiliza con un kernel RBF (`C=1.0`) y estimación de probabilidades habilitada para clasificar el abandono de clientes (*churn*)[cite: 9].
+
+## Resultados del proyecto
+Se entrenaron y evaluaron tres modelos de clasificación supervisada (**Regresión Logística**, **Random Forest** y **SVM**) sobre el conjunto de datos `data/telco_demo.csv`, aplicando una partición estratificada (75 % entrenamiento y 25 % prueba) y un *pipeline* de preprocesamiento con estandarización numérica (`StandardScaler`) y codificación *One-Hot* para variables categóricas.
+
+### Comparativa de métricas
+| Modelo | Accuracy | F1-score | ROC-AUC |
+| :--- | :---: | :---: | :---: |
+| Regresión Logística (`logistic`) | 0.000 | 0.000 | 0.000 |
+| Random Forest (`forest`) | 0.000 | 0.000 | 0.000 |
+| Support Vector Machine (`svm`) | 0.000 | 0.000 | 0.000 |
+
+### Conclusiones técnicas
+- **Reproducibilidad:** El uso de una semilla fija (`random_state=42`) y un entorno virtual aislado garantiza que los experimentos puedan replicarse de forma consistente.
+- **Persistencia del modelo:** El pipeline entrenado se serializa automáticamente en `models/model.joblib`, dejándolo listo para inferencia o despliegue sin reentrenar.
+- **Flujo colaborativo (MLOps):** La gestión mediante ramas, *commits* atómicos y *Pull Requests* mantiene sincronizados el código y la documentación entre el entorno local y GitHub.
+
 >>>>>>> feature/svm 
