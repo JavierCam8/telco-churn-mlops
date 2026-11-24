@@ -20,3 +20,10 @@ Si `py` no existe, sustituirlo por `python`. La ejecución mediante `.venv\Scrip
 ## Git
 Seguir `GUIA_GIT.md`. Este ZIP no contiene `.git`, para que cada alumno inicialice su propio repositorio.
 Este proyecto utiliza Regresión Logística, Random Forest y SVM.
+
+## Evaluación de modelos
+Para medir el desempeño de los algoritmos de clasificación sobre el conjunto de prueba, utilizaremos tres métricas complementarias[cite: 9]:
+
+- **Accuracy:** Proporción total de predicciones correctas realizadas por el modelo[cite: 9].
+- **F1:** Media armónica entre precisión y exhaustividad (*recall*), útil para evaluar el equilibrio en la detección de clientes que abandonan el servicio[cite: 9].
+- **ROC-AUC:** Área bajo la curva ROC, que mide la capacidad del modelo para distinguir entre clases a partir de sus probabilidades estimadas[cite: 9].
