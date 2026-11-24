@@ -20,3 +20,6 @@ Si `py` no existe, sustituirlo por `python`. La ejecución mediante `.venv\Scrip
 ## Git
 Seguir `GUIA_GIT.md`. Este ZIP no contiene `.git`, para que cada alumno inicialice su propio repositorio.
 Este proyecto utiliza Regresión Logística, Random Forest y SVM.
+
+## Modelo SVM
+Support Vector Machine (SVM) es un algoritmo de aprendizaje supervisado que busca el hiperplano óptimo para separar las clases de datos. En este proyecto se utiliza con un kernel RBF (`C=1.0`) y estimación de probabilidades habilitada para clasificar el abandono de clientes (*churn*)[cite: 9].
