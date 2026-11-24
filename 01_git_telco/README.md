@@ -28,7 +28,10 @@ Para medir el desempeño de los algoritmos de clasificación sobre el conjunto d
 - **Accuracy:** Proporción total de predicciones correctas realizadas por el modelo[cite: 9].
 - **F1:** Media armónica entre precisión y exhaustividad (*recall*), útil para evaluar el equilibrio en la detección de clientes que abandonan el servicio[cite: 9].
 - **ROC-AUC:** Área bajo la curva ROC, que mide la capacidad del modelo para distinguir entre clases a partir de sus probabilidades estimadas[cite: 9].
+Precision (Precisión): Porcentaje de clientes que realmente abandonaron el servicio entre todos los que el modelo predijo como abandono. Indica qué tan confiables son las alertas positivas.
+
+Recall (Exhaustividad): Porcentaje de casos reales de abandono que el modelo logró identificar correctamente. Mide la capacidad del modelo para no dejar pasar clientes en riesgo.
 =======
 ## Modelo SVM
 Support Vector Machine (SVM) es un algoritmo de aprendizaje supervisado que busca el hiperplano óptimo para separar las clases de datos. En este proyecto se utiliza con un kernel RBF (`C=1.0`) y estimación de probabilidades habilitada para clasificar el abandono de clientes (*churn*)[cite: 9].
->>>>>>> feature/svm
+>>>>>>> feature/svm 
